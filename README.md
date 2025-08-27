@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&random=false&width=435&lines=oie%2C+tudo+bem;%3F+Sou+a+Brenda+Marques+Limeira+%F0%9F%91%8B" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&random=false&width=435&lines=oie%2C+tudo+bem%3F;+Sou+a+Brenda+Marques+Limeira+%F0%9F%91%8B" alt="Typing SVG" />
   </a>
 </h1>
 
@@ -22,7 +22,7 @@
 
 <p>Olá! Me chamo Brenda Marques Limeira, tenho 16 anos e estou cursando Desenvolvimento Web.</p>
 
-<p>Sou apaixonada por tecnologia e música! Estou sempre buscando aprender mais e me desenvolver como programadora. 🚀</p>
+<p>Sou apaixonada por ler livros e ouvir música! Estou sempre buscando aprender mais. 🚀</p>
 
 ---
 
