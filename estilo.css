@@ -1,0 +1,185 @@
+/* CSS Externo*/
+/* definiras cores tema dark */
+/* raiz */
+:root,
+:root[data-theme='dark'] {
+   --cor-fundo: black;
+   --cor-texto: aliceblue;
+   --menu-link: cyan;
+   --cor-borda: cyan;
+}
+
+:root[data-theme='light'] {
+
+   --cor-fundo: aliceblue;
+   --cor-texto: black;
+   --menu-link: pink;
+   --cor-borda: pink;
+}
+
+/* reset css= padronizar */
+/* seletor universal */
+*{
+margin: 0;
+padding: 0;
+}
+/* inverter cor logo */
+html[data-theme='light'] .logo{
+   filter: invert();
+}
+
+
+body {
+   background: var(--cor-fundo);
+   /*cor do fundo  */
+   color: var(--cor-texto);
+   /* cor TEXTO */
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+   color: var(--menu-link);
+   text-decoration: none;
+}
+
+ul {
+   list-style: none;
+   /* estilo de lista */
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   background: var(--cor-fundo);
+   border-bottom: 5px solid var(--cor-borda);
+   position: fixed;
+   z-index: 9999;
+
+}
+
+.menu-desktop {
+   background: rgb(151, 174, 245);
+   display: none;
+
+}
+
+/* NAV */
+.menu {
+   display: flex;
+   /* em linha//horizontal */
+   gap: 1rem;
+   /* 16px */
+   align-items: center;
+   /* propriedade     valor */
+}
+
+/* lI = listas */
+.menu-item {
+   width: 100%;
+}
+
+.menu-link {
+   display: flex;
+   align-items: center;
+}
+
+.menu-text {
+   color: var(--cor-link) purple;
+   font-size: 1.2rem;
+}
+
+/* menu hamburger botao menu mobile --------*/
+/*  */
+#menuHamburger {
+   margin-left: 1rem;
+}
+
+.btn-menu-mobile {
+   background: red;
+   border: none;
+   cursor: pointer;
+   color: var(--cor-texto);
+   display: flex;
+   font-size: 1.8rem;
+   align-items: center;
+   justify-content: center;
+   padding: 0.5rem;
+
+}
+
+.menu-mobile {
+   /* NAV */
+   position: fixed;
+   top: 0;
+   right: 0;
+   background: var(--cor-fundo);
+   width: 75%;
+   height: 100vh;
+   /* viewPort Altura */
+   border-left: 1px solid var(--cor-borda);
+   max-width: 320px;
+   display: flex;
+   flex-direction: column;
+   padding-top: 4rem;
+   transition: .3s ease-in-out;
+   transform: translateX(100%);
+
+}
+
+/* ativar o menu mobile */
+.menu-mobile.active {
+   transform: translateX(0%);
+}
+
+.menu-mobile,
+/* nav */
+.menu-list {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   width: 100%;
+   padding: 1rem 1rem 2rem;
+   background: purple;
+
+}
+
+.menu-mobile .menu-item {
+   width: 100%;
+   text-align: center;
+}
+.menu-mobile .menu-link{
+   padding: 0.5rem 0;
+   display: inline-block;
+   font-size: 1rem;
+}
+
+.logo{
+   width: 7rem; /* comprimento */
+   /* altura */
+}
+.header-toggle{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+/* medidas responsivas */
+@media (min-width:768px) {
+   .menu-desktop {
+      display: flex;
+      min-width: 30%;
+   }
+
+   .btn-menu-mobile {
+      display: none;
+
+   }
+
+   .header-toggle {
+      min-width: 30%;
+   }
+
+
+}
