@@ -165,8 +165,65 @@ header {
    align-items: center;
 }
 
+#home{
+   padding: 2.5rem 1rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+}
+.main-content{
+   display: flex;
+   gap: 1.5rem;
+   flex-direction: column;
+}
+h1{
+   font-size: 2.5rem;
+}
+
+.video iframe {
+   aspect-ratio: 16/9;
+}
+#home, 
+.projetos, 
+.sobre, 
+.contato {
+   padding: 2.5rem 1rem;
+
+
+}
+.descricao-video{
+   display: flex;
+   flex-direction: column;
+   background: rgb(68, 160, 160);
+   padding: 6.25rem 1rem 2rem ;
+   align-items: center;
+   justify-content: flex-start;
+   text-align: justify;
+   margin-top: -4.5rem;
+   font-family: var();
+}
+.descricao-video h2 {
+   font-size: 2rem;
+   text-transform: uppercase;
+   margin-top: -2rem;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   letter-spacing: 2px;
+   /* letter-spacing */
+}
+
+.projetos{
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+.projetos-container {
+   display: flex;
+   flex-direction: column;
+   gap: 4rem;
+}
 /* medidas responsivas */
 @media (min-width:768px) {
+
    .menu-desktop {
       display: flex;
       min-width: 30%;
@@ -180,6 +237,34 @@ header {
    .header-toggle {
       min-width: 30%;
    }
+   header {
+      padding: 1rem 6rem;
 
+   }
+   h1 {
+      font-size: 5rem;
 
+   }
+   
+}
+#home {
+   .projetos,
+   .sobre{
+      padding: 8rem 6rem 4rem 6rem ;
+   }
+   .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+   }
+}
+@media(min-width: 1400px) {
+   h1{
+      font-size: 2.5rem;
+   }
+   .descricao-video,
+   .projetos,
+   .sobre{
+      padding: 10rem 15rem 4rem;
+   }
 }
